@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="alert alert-success" role="alert">
+        <h4 style="text-align: center;">{{title}}</h4>
+      </div>
+      <br>
+      <div class="alert alert-success" role="alert">
+          <h4 class="alert-heading" style="text-align: center;">Luis Gabriel Bedoya</h4>
+         <p style="text-align: center;">Cra 69 #27-63 Itagui - Antioquia</p>
+          <hr>
+          <p class="mb-0" style="text-align: center;">
+            Celular: 3043399685</p>
+        </div>
+
+    <!-- this creates a google map on the page with the given lat/lng from -->
+    <!-- the component as the initial center of the map: -->
+    <agm-map [latitude]="lat" [longitude]="lng">
+      <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+    </agm-map>
+
+</div>
